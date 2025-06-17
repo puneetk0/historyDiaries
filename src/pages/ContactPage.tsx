@@ -6,37 +6,50 @@ const ContactPage = () => {
   const faqs = [
     {
       question: "What age groups are your programs suitable for?",
-      answer: "Our programs are designed for students from grades 6-12, typically ages 11-18. However, we can customize content for younger or older audiences based on specific requirements."
-    },
-    {
-      question: "How long are the theater shows and workshop sessions?",
-      answer: "Our theater shows typically run for 45-60 minutes, while workshop sessions can range from 2-4 hours depending on the program. We can adjust timings based on your school's schedule."
-    },
-    {
-      question: "Do you travel to schools outside Delhi NCR?",
-      answer: "Yes, we do! While we're based in Delhi NCR, we travel across India to bring our programs to schools. Travel costs may apply for locations outside the NCR region."
+      answer: "Our programs are designed for students from grades 6-12, typically ages 11-18. Each experience is tailored to be developmentally appropriate and curriculum-aligned."
     },
     {
       question: "What subjects do your programs cover?",
-      answer: "Our programs primarily focus on History and Social Sciences, covering topics like ancient civilizations, freedom struggle, civics, and cultural heritage through engaging theatrical performances."
+      answer: "We bring to life the full spectrum of Social Sciences, including History, Geography, Political Science, and Economics through storytelling, dramatization, and hands-on learning."
     },
     {
-      question: "How many students can participate in a single session?",
-      answer: "We can accommodate anywhere from 50 to 500 students per session, depending on the venue and program type. For workshops, we prefer smaller groups of 30-50 students for better interaction."
+      question: "Where do the programs take place?",
+      answer: "Our programs are conducted at school campuses, heritage sites, and partnered theatre auditoriums across Delhi NCR and Jaipur. We’re also open to traveling to other cities upon request."
+    },
+    {
+      question: "What programs do you offer?",
+      answer: "We offer a diverse suite of immersive experiences including Curriculum-Based Theatre Shows, Theatre-Based Monument Visits, Archaeology Workshops, Teacher Training Workshops, and Social Science Curriculum Development."
+    },
+    {
+      question: "How are your theatre shows linked to the school syllabus?",
+      answer: "Each show is mapped to CBSE/ICSE curriculum topics, transforming textbook content into vivid, interactive experiences aligned with grade-specific learning outcomes."
+    },
+    {
+      question: "How do monument visits work?",
+      answer: "Our Echoes of the Past visits include a pre-visit school orientation, a story-driven guided tour with live performances, and interactive worksheets for reflection. We accommodate 100–150 students per visit, led by actors and educators."
     },
     {
       question: "What are your fees for different programs?",
-      answer: "Our fees vary based on the program type, duration, location, and number of participants. Please contact us through the Google Form below for a detailed quote."
-    },
-    {
-      question: "Do you provide teacher training programs?",
-      answer: "Yes! We offer comprehensive teacher training programs to help educators incorporate theater-based learning techniques in their teaching methodology."
+      answer: "Fees vary depending on the program type and batch size. Please contact us with your specific requirements for a detailed quote."
     },
     {
       question: "How far in advance should we book your programs?",
-      answer: "We recommend booking at least 2-3 weeks in advance to ensure availability. However, we try our best to accommodate last-minute requests based on our schedule."
+      answer: "We recommend booking at least 3–4 weeks in advance to ensure date and resource availability, especially for theatre shows and monument visits."
+    },
+    {
+      question: "Do you provide teacher training programs?",
+      answer: "Yes! We offer two dynamic workshops – 'Bringing Lessons to Life' using drama to enhance classroom teaching, and 'Teaching with GenAI' that introduces tools like ChatGPT and Canva AI. Both are practical and cross-subject applicable."
+    },
+    {
+      question: "Can you help schools design or revamp their social science curriculum?",
+      answer: "Absolutely. We collaborate with schools on curriculum redesign, teacher training, and long-term student engagement initiatives rooted in creativity, critical thinking, and relevance."
+    },
+    {
+      question: "How can we invite History Diaries to our school?",
+      answer: "Simply fill out the contact form on our website or email us at historydiaries2016@gmail.com with your school name, desired program(s), and preferred dates. We'll get in touch to co-create the experience."
     }
-  ];
+  ]
+  ;
 
   return (
     <div className="pt-20 bg-gradient-to-b from-blue-50 to-white min-h-screen">
@@ -46,7 +59,7 @@ const ContactPage = () => {
           <h1 className="font-trajan text-4xl md:text-5xl text-white mb-4">CONTACT US</h1>
           <div className="h-1 w-20 bg-hd-orange mx-auto"></div>
           <p className="text-white/90 text-lg mt-6 max-w-2xl mx-auto">
-            Ready to bring history to life in your classroom? Let's connect and explore how we can make learning an unforgettable experience!
+          Ready to bring social sciences to life in your school? Let's connect and explore how we can make learning an unforgettable experience!
           </p>
         </div>
       </div>
@@ -93,7 +106,7 @@ const ContactPage = () => {
                 Fill out our inquiry form and we'll get back to you within 24 hours with program details and pricing.
               </p>
               <a
-                href="https://forms.google.com/your-form-link"
+                href="https://forms.gle/mS32ZjSjbbtFUti47"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-gradient-to-r from-hd-orange to-hd-orange/80 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
@@ -101,9 +114,6 @@ const ContactPage = () => {
                 Fill Inquiry Form
                 <ExternalLink size={20} className="ml-2" />
               </a>
-              <p className="text-sm text-gray-500 mt-4">
-                * Please replace the Google Forms link above with your actual form URL
-              </p>
             </div>
           </div>
 
@@ -144,8 +154,7 @@ const ContactPage = () => {
                 Still Have Questions?
               </h3>
               <p className="text-gray-600 mb-6 text-lg">
-                We're here to help! Don't hesitate to reach out directly via email or phone. 
-                Our team is passionate about making history come alive for your students.
+              We're here to help! Don't hesitate to reach out directly via email or phone. Our team is passionate about making social sciences come alive for your students.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

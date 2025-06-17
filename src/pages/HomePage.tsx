@@ -84,43 +84,43 @@ const HomePage = () => {
   const galleryImages = [
     {
       id: 1,
-      src: "public/Images/1.jpg",
-      title: "Theatre Workshop Session",
+      src: "https://i.postimg.cc/g07wKM7z/1.jpg",
+      title: "Dandi March",
     },
     {
       id: 2,
-      src: "public/Images/2.jpg",
-      title: "Monument Visit - Red Fort",
+      src: "https://i.postimg.cc/1zTYGQcv/2.jpg",
+      title: "Historical Thinking Workshop",
     },
     {
       id: 3,
-      src: "public/Images/3.jpg",
-      title: "Interactive Student Engagement",
+      src: "https://i.postimg.cc/63Pw4gyK/3.jpg",
+      title: "Rise of a Hitler 3",
     },
     {
       id: 4,
-      src: "public/Images/4.jpg",
-      title: "Teacher Training Workshop",
+      src: "https://i.postimg.cc/FKs7ytsk/4.jpg",
+      title: "Rise of a Hitler 4",
     },
     {
       id: 5,
-      src: "public/Images/5.jpg",
-      title: "Archaeology Workshop",
+      src: "https://i.postimg.cc/5jdVnzBk/5.jpg",
+      title: "Rise of a Hitler 5",
     },
     {
       id: 6,
-      src: "public/Images/6.jpg",
-      title: "Social Science Curriculum",
+      src: "https://i.postimg.cc/mrRrTvF6/6.jpg",
+      title: "Rise of a Hitler 1",
     },
     {
       id: 7,
-      src: "public/Images/7.jpg",
-      title: "Community Outreach",
+      src: "https://i.postimg.cc/Z5JRmkNs/7.jpg",
+      title: "Rise of a Hitler 2",
     },
     {
       id: 8,
-      src: "public/Images/8.jpg",
-      title: "Student Performance",
+      src: "https://i.postimg.cc/6674bNVd/8.jpg",
+      title: "Theatre in Education Workshop",
     }
   ];
 
@@ -180,7 +180,7 @@ const HomePage = () => {
             <source src="https://raw.githubusercontent.com/Newton-School/audio-video-HTML-cypress-boilerplate/main/public/endgame.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video> */}
-          <img src={"public/Images/1.jpg"}></img>
+          <img className="object-cover w-full h-full" src={"https://i.postimg.cc/g07wKM7z/1.jpg"}></img>
         </div>
         
         {/* Hero Content - Clean typography */}
@@ -208,13 +208,7 @@ const HomePage = () => {
               Explore Our Programs
               <ArrowRight className="ml-2" />
             </Link>
-            <a 
-              href="mailto:historydiaries2016@gmail.com" 
-              className="bg-transparent border border-white text-white hover:bg-white/10 px-8 py-4 font-bold text-lg rounded-md transition-all duration-300 flex items-center gap-2"
-            >
-              Send Us Your Requirements
-              <ArrowRight className="ml-2" />
-            </a>
+           
           </div>
         </div>
         
@@ -427,7 +421,7 @@ const HomePage = () => {
             href="mailto:historydiaries2016@gmail.com" 
             className="inline-flex items-center gap-2 bg-white text-hd-orange px-8 py-4 font-bold text-lg rounded-md transition-all duration-300 hover:bg-gray-100"
           >
-            Send Us Your Requirements <ArrowRight size={18} />
+            Contact us <ArrowRight size={18} />
           </a>
         </div>
       </section>

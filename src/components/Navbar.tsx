@@ -17,20 +17,7 @@ const Navbar = () => {
     { name: "CONTACT", path: "/contact" }
   ];
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  
 
   useEffect(() => {
     setIsMenuOpen(false);
@@ -41,10 +28,10 @@ const Navbar = () => {
       className={`fixed top-0 w-full z-50 transition-all duration-500 ease-in-out ${
         isScrolled
           ? "bg-white/95 backdrop-blur-lg shadow-xl border-b border-gray-100/50 py-3"
-          : "bg-gradient-to-b from-black/30 to-transparent backdrop-blur-sm py-5"
+          : "bg-gradient-to-b from-black/30 to-transparent backdrop-blur-sm py-3"
       }`}
     >
-      <div className="container mx-auto px-6 lg:px-8 flex justify-between items-center">
+      <div className="container mx-auto px-6 lg:px-5 flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-4 group">
           <div className="relative">

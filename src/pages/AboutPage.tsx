@@ -83,7 +83,7 @@ them experiential and meaningful.
             <div className="relative">
               <div className="relative overflow-hidden rounded-2xl shadow-2xl transform rotate-2 hover:rotate-0 transition-transform duration-300">
                 <img 
-                  src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45"
+                  src="https://i.postimg.cc/5jdVnzBk/5.jpg"
                   alt="Students engaged in interactive learning"
                   className="w-full h-96 object-cover"
                 />
@@ -105,7 +105,7 @@ them experiential and meaningful.
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Vision */}
             <div className="relative">
-              <div className="bg-gradient-to-br from-hd-purple to-hd-blue p-8 rounded-2xl text-white shadow-2xl">
+              <div className="bg-gradient-to-br min-h-[260px] from-hd-purple to-hd-blue p-8 rounded-2xl text-white shadow-2xl">
                 <div className="flex items-center mb-6">
                   <Target size={40} className="mr-4" />
                   <h2 className="text-3xl font-trajan">OUR VISION</h2>
@@ -123,7 +123,7 @@ and impactful.
             
             {/* Mission */}
             <div className="relative">
-              <div className="bg-gradient-to-br from-hd-orange to-hd-orange/80 p-8 rounded-2xl text-white shadow-2xl">
+              <div className="bg-gradient-to-br min-h-[260px] from-hd-orange to-hd-orange/80 p-8 rounded-2xl text-white shadow-2xl">
                 <div className="flex items-center mb-6">
                   <Users size={40} className="mr-4" />
                   <h2 className="text-3xl font-trajan">OUR MISSION</h2>
@@ -155,17 +155,17 @@ inspire students, empower teachers, and enrich curriculums.
             Our journey began with history—exploring the stories of people, places, and
 events. But history is not an isolated subject. It is deeply interwoven with
 political, cultural, social, economic, and geographical contexts. These elements
-shape the world we live in today and influence our everyday lives.
+shape the world we live in today and influence our everyday lives. <br /><br />
 At History Diaries, we believe that history isn’t just about the past—it’s about
 understanding the consequences of the past and how they manifest in our
 present. From the political systems that govern us to the social and economic
 conditions we navigate daily, history provides a lens through which we can
-make sense of these dynamics.
+make sense of these dynamics.<br /><br />
 The diary aspect is particularly significant because it reflects the personal
 connection each individual has to these stories. We all live within the pages of
 history, contributing to and being shaped by it. Our name, History Diaries,
 symbolizes this journey—an exploration of the stories that define us, our
-societies, and our futures.
+societies, and our futures.<br /><br />
 This philosophy drives everything we do at History Diaries, making learning
 not just impactful but transformative.
             </p>
@@ -222,7 +222,7 @@ not just impactful but transformative.
           
           {/* Skills We Cultivate */}
           <div className="bg-white rounded-2xl p-8 shadow-xl">
-            <h3 className="text-2xl font-trajan text-center mb-8 text-gray-800">Skills We Cultivate in Students</h3>
+            <h3 className="text-2xl font-trajan text-center mb-8 text-gray-800">Skills & Attitude We Cultivate in Students</h3>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center p-6 rounded-lg bg-hd-orange/5 border border-hd-orange/20">

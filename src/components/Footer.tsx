@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white py-12">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="flex justify-between">
           {/* Logo and Description */}
           <div className="flex flex-col">
             <h3 className="font-trajan text-2xl mb-4">HISTORY DIARIES</h3>
@@ -42,18 +42,8 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h4 className="font-garamond text-xl mb-4">Our Services</h4>
-            <ul className="space-y-2">
-              <li className="text-gray-300">Theatre Shows</li>
-              <li className="text-gray-300">Monument Visits</li>
-              <li className="text-gray-300">Teacher Training</li>
-              <li className="text-gray-300">Archaeology Workshop</li>
-              <li className="text-gray-300">Social Science Curriculum Development</li>
-              <li className="text-gray-300">Others</li>
-            </ul>
-          </div>
-
+ 
+       
           {/* Contact */}
           <div>
             <h4 className="font-garamond text-xl mb-4">Contact Us</h4>
