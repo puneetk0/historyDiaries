@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
-import { Theater, MapPin, GraduationCap, Users, ChevronRight, Star, Calendar, Award, Search, Puzzle, Map, MessageCircle, Scroll, Wrench, User, Bot, ChevronLeft } from "lucide-react";
+import { Theater, MapPin, GraduationCap, Users, ChevronRight, Star, Calendar,Torus,  Award, Search, Puzzle, Map, MessageCircle, Scroll, Wrench, User, Bot, ChevronLeft } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -25,7 +25,7 @@ const ProgramsPage = () => {
       id: 'trade-to-territory',
       title: 'Trade to Territory',
       grades: 'Grades 7 & 8',
-      image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1920&h=1080&fit=crop',
+      image: 'https://i.postimg.cc/6qycR6zQ/Trade-To-Territory.jpg',
       shows: '8+ Shows',
       students: '3000+ Students',
       description: 'A powerful blend of entertainment and education, Trade to Territory traces India\'s transformation from a prosperous trade hub to a colonized land. With Nat and Nati as witty narrators, the play captures the arrival of European powers, British expansion, and acts of Indian resistance.',
@@ -37,7 +37,7 @@ const ProgramsPage = () => {
       id: 'rise-of-hitler',
       title: 'Rise of Hitler',
       grades: 'Grades 9 & above',
-      image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?w=1920&h=1080&fit=crop',
+      image: 'https://i.postimg.cc/5jdVnzBk/5.jpg',
       shows: '5+ Shows',
       students: '2000+ Students',
       description: 'Rise of Hitler takes audiences through the turbulent post-WWI era that paved the way for one of history\'s most notorious figures. The play explores the cultural despair, economic hardship, and political manipulation that fueled Hitler\'s ascent—and his eventual fall.',
@@ -48,7 +48,7 @@ const ProgramsPage = () => {
       id: 'dandi-march',
       title: 'Dandi March',
       grades: 'Grades 10 & above',
-      image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=1920&h=1080&fit=crop',
+      image: 'https://i.postimg.cc/g07wKM7z/1.jpg',
       shows: '2 Shows',
       students: '1000+ Students',
       description: 'An inspiring portrayal of Gandhiji\'s legendary march, Dandi March goes beyond the salt to reveal what it truly takes to mobilize the masses. Through compelling stagecraft, the show unpacks how leaders connect with people, build momentum, and turn a spark into a movement.',
@@ -75,11 +75,10 @@ const ProgramsPage = () => {
         </div>
         <div className="relative z-10">
           <h3 className="font-trajan text-2xl md:text-3xl mb-4 leading-tight">
-            Looking to reimagine how {sectionTitle.toLowerCase()} are delivered at your school?
+          Looking to reimagine how social sciences are taught at your school?
           </h3>
           <p className="text-sm mb-6 opacity-95 leading-relaxed max-w-2xl mx-auto">
-            We also offer support in curriculum design, program development, and experiential learning strategies 
-            tailored to your needs. Let's co-create a powerful learning experience together.
+          We also offer support in curriculum design, program development, and experiential learning strategies tailored to your needs. Let’s co-create a powerful learning experience together.
           </p>
           <Button size="lg" className="bg-white text-hd-purple hover:bg-slate-100 text-sm px-8 py-3 rounded-xl shadow-lg font-semibold transition-all duration-300 hover:scale-105">
             <Award className="w-4 h-4 mr-2" />
@@ -140,11 +139,10 @@ const ProgramsPage = () => {
                       className="group flex items-center gap-3 p-4 bg-slate-50/50 rounded-2xl transition-all duration-300 data-[state=active]:bg-gradient-to-r data-[state=active]:from-hd-orange data-[state=active]:to-amber-500 data-[state=active]:text-white data-[state=active]:shadow-lg hover:bg-slate-100 text-slate-700 border-0 justify-center min-h-[80px]"
                     >
                       <div className="p-3 rounded-xl bg-hd-orange/15 group-data-[state=active]:bg-white/25 transition-all duration-300">
-                        <Theater className="w-6 h-6 text-hd-orange group-data-[state=active]:text-white transition-colors duration-300" />
+                        <Theater className="w-4 h-4 text-hd-orange group-data-[state=active]:text-white transition-colors duration-300" />
                       </div>
                       <div className="text-left">
-                        <div className="font-trajan text-sm font-bold mb-1 tracking-wide">Theatre Shows</div>
-                        <div className="text-xs opacity-75 font-medium">Curriculum-based  performance</div>
+                        <div className="font-trajan text-md font-bold tracking-wide">Theatre Shows</div>
                       </div>
                     </TabsTrigger>
                     
@@ -153,11 +151,10 @@ const ProgramsPage = () => {
                       className="group flex items-center gap-3 p-4 bg-slate-50/50 rounded-2xl transition-all duration-300 data-[state=active]:bg-gradient-to-r data-[state=active]:from-hd-blue data-[state=active]:to-blue-500 data-[state=active]:text-white data-[state=active]:shadow-lg hover:bg-slate-100 text-slate-700 border-0 justify-center min-h-[80px]"
                     >
                       <div className="p-3 rounded-xl bg-hd-blue/15 group-data-[state=active]:bg-white/25 transition-all duration-300">
-                        <MapPin className="w-6 h-6 text-hd-blue group-data-[state=active]:text-white transition-colors duration-300" />
+                        <MapPin className="w-4 h-4 text-hd-blue group-data-[state=active]:text-white transition-colors duration-300" />
                       </div>
                       <div className="text-left">
-                        <div className="font-trajan text-sm font-bold mb-1 tracking-wide">Monument Visits</div>
-                        <div className="text-xs opacity-75 font-medium">Historical site experiences</div>
+                        <div className="font-trajan text-md font-bold tracking-wide">Monument Visits</div>
                       </div>
                     </TabsTrigger>
 
@@ -166,11 +163,10 @@ const ProgramsPage = () => {
                       className="group flex items-center gap-3 p-4 bg-slate-50/50 rounded-2xl transition-all duration-300 data-[state=active]:bg-gradient-to-r data-[state=active]:from-hd-teal data-[state=active]:to-teal-500 data-[state=active]:text-white data-[state=active]:shadow-lg hover:bg-slate-100 text-slate-700 border-0 justify-center min-h-[80px]"
                     >
                       <div className="p-3 rounded-xl bg-hd-teal/15 group-data-[state=active]:bg-white/25 transition-all duration-300">
-                        <Search className="w-6 h-6 text-hd-teal group-data-[state=active]:text-white transition-colors duration-300" />
+                        <Search className="w-4 h-4 text-hd-teal group-data-[state=active]:text-white transition-colors duration-300" />
                       </div>
                       <div className="text-left">
-                        <div className="font-trajan text-sm font-bold mb-1 tracking-wide">Time Detectives</div>
-                        <div className="text-xs opacity-75 font-medium">Archaeological workshops</div>
+                        <div className="font-trajan text-md font-bold tracking-wide">Archaeological workshops</div>
                       </div>
                     </TabsTrigger>
                     
@@ -179,11 +175,10 @@ const ProgramsPage = () => {
                       className="group flex items-center gap-3 p-4 bg-slate-50/50 rounded-2xl transition-all duration-300 data-[state=active]:bg-gradient-to-r data-[state=active]:from-hd-purple data-[state=active]:to-purple-500 data-[state=active]:text-white data-[state=active]:shadow-lg hover:bg-slate-100 text-slate-700 border-0 justify-center min-h-[80px]"
                     >
                       <div className="p-3 rounded-xl bg-hd-purple/15 group-data-[state=active]:bg-white/25 transition-all duration-300">
-                        <GraduationCap className="w-6 h-6 text-hd-purple group-data-[state=active]:text-white transition-colors duration-300" />
+                        <GraduationCap className="w-4 h-4 text-hd-purple group-data-[state=active]:text-white transition-colors duration-300" />
                       </div>
                       <div className="text-left">
-                        <div className="font-trajan text-sm font-bold mb-1 tracking-wide">Teacher Training</div>
-                        <div className="text-xs opacity-75 font-medium">Educator empowerment</div>
+                        <div className="font-trajan text-md font-bold tracking-wide">Teacher Training</div>
                       </div>
                     </TabsTrigger>
                   </TabsList>
@@ -216,7 +211,140 @@ const ProgramsPage = () => {
                   deeper emotional and intellectual connections with the subject matter.
                 </p>
               </div>
+ {/* Coming Soon Section */}
+ <div>
+                <div className="text-center mb-12">
+                  <h3 className="text-2xl md:text-3xl font-trajan text-slate-800 mb-6 tracking-wide">Upcoming Productions</h3>
+                  <div className="w-16 h-1 bg-gradient-to-r from-slate-400 to-slate-600 mx-auto rounded-full"></div>
+                </div>
+                
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                  {/* Threads of Time */}
+                  <Card className="group overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-slate-200/50 bg-white hover:-translate-y-3">
+                    <div className="relative overflow-hidden" style={{ aspectRatio: '16/9' }}>
+                      <img 
+                        src="https://i.postimg.cc/gJnLSJ5F/Threads-of-Time-Indus-Valley-Civilization-4.jpg" 
+                        alt="Threads of Time Coming Soon" 
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                      <div className="absolute top-4 right-4 bg-gradient-to-r from-slate-600 to-slate-700 text-white px-4 py-2 rounded-full text-xs font-bold shadow-lg z-10">
+                        Coming Soon
+                      </div>
+                      <div className="absolute bottom-4 left-4 text-white">
+                        <div className="text-base font-medium opacity-95">Preview Soon</div>
+                      </div>
+                    </div>
+                    
+                    <CardHeader className="p-6">
+                      <div className="flex justify-between items-start mb-4">
+                        <div className="flex-1">
+                          <CardTitle className="font-trajan text-2xl text-slate-800 mb-3 group-hover:text-hd-teal transition-colors duration-300 tracking-wide">
+                            Threads of Time: The Story of Us
+                          </CardTitle>
+                          <CardDescription className="text-slate-600 font-semibold text-base">Grades 6-7</CardDescription>
+                        </div>
+                      </div>
+                      
+                      <div className="flex flex-wrap gap-3 mb-4">
+                        <div className="flex items-center gap-2 bg-gradient-to-r from-hd-teal/10 to-teal-500/10 px-4 py-2 rounded-lg border border-hd-teal/20">
+                          <Calendar className="w-4 h-4 text-hd-teal" />
+                          <span className="text-sm font-bold text-slate-700">July 2025</span>
+                        </div>
+                      </div>
+                    </CardHeader>
+                    
+                    <CardContent className="px-6 pb-6">
+                      <p className="text-slate-700 leading-relaxed text-base mb-4">
+                        Threads of Time transports students to the world of the Indus Valley Civilization—one of the world's earliest and most advanced urban societies. Through the eyes of children, artisans, and leaders of Harappa, Mohenjo-daro, and Dholavira, the play explores daily life, trade, innovation, and unsolved mysteries.
+                      </p>
+                      {expandedCard === 'threads-of-time' && (
+                        <div className="text-slate-700 leading-relaxed text-base mb-4">
+                          <p className="mb-4">With flowing rivers and bustling streets as its stage, the production brings alive:</p>
+                          <ul className="list-disc list-inside space-y-1 text-sm ml-3 mb-4">
+                            <li>Ingenious urban planning and drainage systems</li>
+                            <li>Cross-continental trade and craftsmanship</li>
+                            <li>Childhood and family life in Harappan homes</li>
+                            <li>Undeciphered scripts, seals, and sacred rituals</li>
+                            <li>New archaeological insights from Rakhigarhi and Dholavira</li>
+                          </ul>
+                          <p>Grounded in archaeological records and modern research, the show fuses storytelling with visual props, audience interaction, and replica-based stagecraft—igniting curiosity about India's ancient past through light, sound, and drama.</p>
+                        </div>
+                      )}
+                      <Button 
+                        variant="ghost" 
+                        size="sm" 
+                        onClick={() => toggleCardExpansion('threads-of-time')}
+                        className="text-hd-teal hover:text-hd-teal hover:bg-hd-teal/10 p-0 h-auto font-semibold text-sm"
+                      >
+                        {expandedCard === 'threads-of-time' ? 'Read Less' : 'Read More'}
+                      </Button>
+                    </CardContent>
+                  </Card>
 
+                  {/* Flames of Change */}
+                  <Card className="group overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-slate-200/50 bg-white hover:-translate-y-3">
+                    <div className="relative overflow-hidden" style={{ aspectRatio: '16/9' }}>
+                      <img 
+                        src="https://www.chicoer.com/wp-content/uploads/migration/2013/201310/NEWS_131019566_AR_0_HFUODORZVCSF.jpg?w=535" 
+                        alt="Flames of Change Coming Soon" 
+                        className="w-full h-full object-cover opacity-90"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                      <div className="absolute top-4 right-4 bg-gradient-to-r from-slate-600 to-slate-700 text-white px-4 py-2 rounded-full text-xs font-bold shadow-lg z-10">
+                        Coming Soon
+                      </div>
+                      <div className="absolute bottom-4 left-4 text-white">
+                        <div className="text-base font-medium opacity-95">Preview Soon</div>
+                      </div>
+                    </div>
+                    
+                    <CardHeader className="p-6">
+                      <div className="flex justify-between items-start mb-4">
+                        <div className="flex-1">
+                          <CardTitle className="font-trajan text-2xl text-slate-800 mb-3 group-hover:text-orange-600 transition-colors duration-300 tracking-wide">
+                            Flames of Change: The French Revolution Reimagined
+                          </CardTitle>
+                          <CardDescription className="text-slate-600 font-semibold text-base">Grades 9 & above</CardDescription>
+                        </div>
+                      </div>
+                      
+                      <div className="flex flex-wrap gap-3 mb-4">
+                        <div className="flex items-center gap-2 bg-gradient-to-r from-orange-100 to-red-50 px-4 py-2 rounded-lg border border-orange-200">
+                          <Calendar className="w-4 h-4 text-orange-600" />
+                          <span className="text-sm font-bold text-slate-700">August 2025</span>
+                        </div>
+                      </div>
+                    </CardHeader>
+                    
+                    <CardContent className="px-6 pb-6">
+                      <p className="text-slate-700 leading-relaxed text-base mb-4">
+                        Flames of Change plunges students into the ideological fire of the French Revolution. This theatrical experience uncovers not just events, but ideas—liberty, equality, fraternity—and their global legacy.
+                      </p>
+                      {expandedCard === 'flames-of-change' && (
+                        <div className="text-slate-700 leading-relaxed text-base mb-4">
+                          <p className="mb-4">Guided by charged characters and striking performances, students witness:</p>
+                          <ul className="list-disc list-inside space-y-1 text-sm ml-3 mb-4">
+                            <li>The spark of revolution in Paris</li>
+                            <li>The rise and fall of the Reign of Terror</li>
+                            <li>The dramatic ascent of Napoleon</li>
+                            <li>The contradictions and failures of revolutionary ideals</li>
+                          </ul>
+                          <p>With lights, movement, and rich dialogue, the show asks: Did the revolution deliver on its promises? What does it teach us about real change today? A perfect blend of performance and provocation, this show encourages critical reflection on history, power, and justice.</p>
+                        </div>
+                      )}
+                      <Button 
+                        variant="ghost" 
+                        size="sm" 
+                        onClick={() => toggleCardExpansion('flames-of-change')}
+                        className="text-orange-600 hover:text-orange-600 hover:bg-orange-50 p-0 h-auto font-semibold text-sm"
+                      >
+                        {expandedCard === 'flames-of-change' ? 'Read Less' : 'Read More'}
+                      </Button>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
               {/* Past Productions Section */}
               <div>
                 <div className="text-center mb-12">
@@ -333,140 +461,7 @@ const ProgramsPage = () => {
                 </div>
               </div>
 
-              {/* Coming Soon Section */}
-              <div>
-                <div className="text-center mb-12">
-                  <h3 className="text-2xl md:text-3xl font-trajan text-slate-800 mb-6 tracking-wide">Coming Soon</h3>
-                  <div className="w-16 h-1 bg-gradient-to-r from-slate-400 to-slate-600 mx-auto rounded-full"></div>
-                </div>
-                
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                  {/* Threads of Time */}
-                  <Card className="group overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-slate-200/50 bg-white hover:-translate-y-3">
-                    <div className="relative overflow-hidden" style={{ aspectRatio: '16/9' }}>
-                      <img 
-                        src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=1920&h=1080&fit=crop" 
-                        alt="Threads of Time Coming Soon" 
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                      <div className="absolute top-4 right-4 bg-gradient-to-r from-slate-600 to-slate-700 text-white px-4 py-2 rounded-full text-xs font-bold shadow-lg z-10">
-                        Coming Soon
-                      </div>
-                      <div className="absolute bottom-4 left-4 text-white">
-                        <div className="text-base font-medium opacity-95">Preview Soon</div>
-                      </div>
-                    </div>
-                    
-                    <CardHeader className="p-6">
-                      <div className="flex justify-between items-start mb-4">
-                        <div className="flex-1">
-                          <CardTitle className="font-trajan text-2xl text-slate-800 mb-3 group-hover:text-hd-teal transition-colors duration-300 tracking-wide">
-                            Threads of Time: The Story of Us
-                          </CardTitle>
-                          <CardDescription className="text-slate-600 font-semibold text-base">Grades 6-7</CardDescription>
-                        </div>
-                      </div>
-                      
-                      <div className="flex flex-wrap gap-3 mb-4">
-                        <div className="flex items-center gap-2 bg-gradient-to-r from-hd-teal/10 to-teal-500/10 px-4 py-2 rounded-lg border border-hd-teal/20">
-                          <Calendar className="w-4 h-4 text-hd-teal" />
-                          <span className="text-sm font-bold text-slate-700">Coming Soon</span>
-                        </div>
-                      </div>
-                    </CardHeader>
-                    
-                    <CardContent className="px-6 pb-6">
-                      <p className="text-slate-700 leading-relaxed text-base mb-4">
-                        Threads of Time transports students to the world of the Indus Valley Civilization—one of the world's earliest and most advanced urban societies. Through the eyes of children, artisans, and leaders of Harappa, Mohenjo-daro, and Dholavira, the play explores daily life, trade, innovation, and unsolved mysteries.
-                      </p>
-                      {expandedCard === 'threads-of-time' && (
-                        <div className="text-slate-700 leading-relaxed text-base mb-4">
-                          <p className="mb-4">With flowing rivers and bustling streets as its stage, the production brings alive:</p>
-                          <ul className="list-disc list-inside space-y-1 text-sm ml-3 mb-4">
-                            <li>Ingenious urban planning and drainage systems</li>
-                            <li>Cross-continental trade and craftsmanship</li>
-                            <li>Childhood and family life in Harappan homes</li>
-                            <li>Undeciphered scripts, seals, and sacred rituals</li>
-                            <li>New archaeological insights from Rakhigarhi and Dholavira</li>
-                          </ul>
-                          <p>Grounded in archaeological records and modern research, the show fuses storytelling with visual props, audience interaction, and replica-based stagecraft—igniting curiosity about India's ancient past through light, sound, and drama.</p>
-                        </div>
-                      )}
-                      <Button 
-                        variant="ghost" 
-                        size="sm" 
-                        onClick={() => toggleCardExpansion('threads-of-time')}
-                        className="text-hd-teal hover:text-hd-teal hover:bg-hd-teal/10 p-0 h-auto font-semibold text-sm"
-                      >
-                        {expandedCard === 'threads-of-time' ? 'Read Less' : 'Read More'}
-                      </Button>
-                    </CardContent>
-                  </Card>
-
-                  {/* Flames of Change */}
-                  <Card className="group overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-slate-200/50 bg-white hover:-translate-y-3">
-                    <div className="relative overflow-hidden" style={{ aspectRatio: '16/9' }}>
-                      <img 
-                        src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1920&h=1080&fit=crop" 
-                        alt="Flames of Change Coming Soon" 
-                        className="w-full h-full object-cover opacity-90"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
-                      <div className="absolute top-4 right-4 bg-gradient-to-r from-slate-600 to-slate-700 text-white px-4 py-2 rounded-full text-xs font-bold shadow-lg z-10">
-                        Coming Soon
-                      </div>
-                      <div className="absolute bottom-4 left-4 text-white">
-                        <div className="text-base font-medium opacity-95">Preview Soon</div>
-                      </div>
-                    </div>
-                    
-                    <CardHeader className="p-6">
-                      <div className="flex justify-between items-start mb-4">
-                        <div className="flex-1">
-                          <CardTitle className="font-trajan text-2xl text-slate-800 mb-3 group-hover:text-orange-600 transition-colors duration-300 tracking-wide">
-                            Flames of Change: The French Revolution Reimagined
-                          </CardTitle>
-                          <CardDescription className="text-slate-600 font-semibold text-base">Grades 9 & above</CardDescription>
-                        </div>
-                      </div>
-                      
-                      <div className="flex flex-wrap gap-3 mb-4">
-                        <div className="flex items-center gap-2 bg-gradient-to-r from-orange-100 to-red-50 px-4 py-2 rounded-lg border border-orange-200">
-                          <Calendar className="w-4 h-4 text-orange-600" />
-                          <span className="text-sm font-bold text-slate-700">Coming Soon</span>
-                        </div>
-                      </div>
-                    </CardHeader>
-                    
-                    <CardContent className="px-6 pb-6">
-                      <p className="text-slate-700 leading-relaxed text-base mb-4">
-                        Flames of Change plunges students into the ideological fire of the French Revolution. This theatrical experience uncovers not just events, but ideas—liberty, equality, fraternity—and their global legacy.
-                      </p>
-                      {expandedCard === 'flames-of-change' && (
-                        <div className="text-slate-700 leading-relaxed text-base mb-4">
-                          <p className="mb-4">Guided by charged characters and striking performances, students witness:</p>
-                          <ul className="list-disc list-inside space-y-1 text-sm ml-3 mb-4">
-                            <li>The spark of revolution in Paris</li>
-                            <li>The rise and fall of the Reign of Terror</li>
-                            <li>The dramatic ascent of Napoleon</li>
-                            <li>The contradictions and failures of revolutionary ideals</li>
-                          </ul>
-                          <p>With lights, movement, and rich dialogue, the show asks: Did the revolution deliver on its promises? What does it teach us about real change today? A perfect blend of performance and provocation, this show encourages critical reflection on history, power, and justice.</p>
-                        </div>
-                      )}
-                      <Button 
-                        variant="ghost" 
-                        size="sm" 
-                        onClick={() => toggleCardExpansion('flames-of-change')}
-                        className="text-orange-600 hover:text-orange-600 hover:bg-orange-50 p-0 h-auto font-semibold text-sm"
-                      >
-                        {expandedCard === 'flames-of-change' ? 'Read Less' : 'Read More'}
-                      </Button>
-                    </CardContent>
-                  </Card>
-                </div>
-              </div>
+             
 
               <ReimagineCTA sectionTitle="Theatre Shows" />
             </TabsContent>
@@ -541,23 +536,21 @@ const ProgramsPage = () => {
                           Qutub Complex Visit
                         </CardTitle>
                         <CardDescription className="text-hd-blue font-bold text-lg">
-                          Grades 6 and above | Echoes of the Past
+                          Grades 6 and above
                         </CardDescription>
                       </div>
                     </div>
                   </div>
                   
                   <CardContent className="p-8">
-                    <p className="text-slate-700 leading-relaxed text-lg mb-6">
+                    <p className="text-slate-700 leading-relaxed text-md mb-6">
                       Step into the cradle of Delhi's medieval history with Echoes of the Past. Students wander through the Qutub Complex, 
                       guided by costumed actors portraying rulers, architects, travelers, and local citizens of the time.
-                    </p>
-                    
-                    <p className="text-slate-700 leading-relaxed text-base mb-6">
+<br /> <br />
                       As students move from monument to monument, stories come alive—from the vision of Qutub-ud-din Aibak and the rise of Indo-Islamic architecture, to lesser-known tales of craftsmanship, power struggles, and cultural fusion.
-                    </p>
-                    
-                    <p className="text-slate-700 leading-relaxed text-base">
+ 
+                      <br /><br />                  
+
                       Interactive activity sheets at each station encourage students to think critically, and a concluding reflection session ties it all together—prompting students to ask: What makes a monument more than just stone?
                     </p>
                   </CardContent>
@@ -575,23 +568,19 @@ const ProgramsPage = () => {
                           Humayun's Tomb Visit
                         </CardTitle>
                         <CardDescription className="text-hd-blue font-bold text-lg">
-                          Grades 6 and above | Mughal Grandeur
+                          Grades 6 and above
                         </CardDescription>
                       </div>
                     </div>
                   </div>
                   
                   <CardContent className="p-8">
-                    <p className="text-slate-700 leading-relaxed text-lg mb-6">
+                    <p className="text-slate-700 leading-relaxed text-md mb-6">
                       Uncover the Mughal rule through the grandeur and geometry of Humayun's Tomb—Delhi's earliest example of 
                       Persian-style garden tombs and the architectural inspiration for the Taj Mahal.
-                    </p>
-                    
-                    <p className="text-slate-700 leading-relaxed text-base mb-6">
+                 <br /> <br />
                       In this dramatized walk, students meet characters like Humayun's grieving wife Haji Begum, architects from Persia, and historians from Akbar's court. The storytelling illuminates themes of empire, art, death, and memory.
-                    </p>
-                    
-                    <p className="text-slate-700 leading-relaxed text-base">
+                      <br /><br />
                       From symmetrical layouts to symbolic inscriptions, the experience invites students to interpret spaces beyond aesthetics—to understand power, identity, and the evolution of Mughal rule.
                     </p>
                   </CardContent>
@@ -610,7 +599,7 @@ const ProgramsPage = () => {
                 </div>
                 
                 <h2 className="text-3xl md:text-4xl font-trajan text-slate-800 mb-6 tracking-wide">
-                  Time Detectives Workshop
+                Time Detectives - Archaeology Workshop
                 </h2>
                 
                 <div className="flex items-center justify-center mb-8">
@@ -635,7 +624,7 @@ const ProgramsPage = () => {
                       </div>
                       <div>
                         <CardTitle className="font-trajan text-3xl text-slate-800 mb-3 tracking-wide">
-                          Time Detectives Workshop
+                          Time Detectives - Archaeology Workshop
                         </CardTitle>
                         <CardDescription className="text-hd-teal font-bold text-xl">
                           Grades 6+ | Right in Your School
@@ -648,8 +637,8 @@ const ProgramsPage = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-10">
                       <div>
                         <p className="text-slate-700 leading-relaxed text-md mb-6 font-medium">
-                        This hands-on, school-based workshop transforms students into young archaeologists for a day. Led by a facilitator from an archaeology background, Time Detectives takes students through the thrilling process of historical discovery using replica artifacts, excavation simulations, and collaborative challenges. <br />
-Students dig through soil grids, reconstruct broken pottery, interpret archaeological maps, and decode symbols—experiencing how archaeologists uncover the past, layer by layer. The workshop encourages critical thinking, patience, observation, and teamwork—all while making the mysteries of history tangible and exciting. <br />
+                        This hands-on, school-based workshop transforms students into young archaeologists for a day. Led by a facilitator from an archaeology background, Time Detectives takes students through the thrilling process of historical discovery using replica artifacts, excavation simulations, and collaborative challenges. <br /><br />
+Students dig through soil grids, reconstruct broken pottery, interpret archaeological maps, and decode symbols—experiencing how archaeologists uncover the past, layer by layer. The workshop encourages critical thinking, patience, observation, and teamwork—all while making the mysteries of history tangible and exciting. <br /><br />
 From a Mystery Box to a simulated dig site, from decoding seals to sealing a time capsule, this in-school adventure opens up history not just as a subject—but as a journey of exploration and wonder.
                         </p>
                         
@@ -678,7 +667,7 @@ From a Mystery Box to a simulated dig site, from decoding seals to sealing a tim
                             </div>
                             <div className="flex items-center gap-3 bg-white px-4 py-3 rounded-xl border border-hd-teal/15 shadow-sm hover:shadow-md transition-shadow">
                               <div className="p-2 bg-hd-teal/15 rounded-lg">
-                                <div className="w-4 h-4 text-hd-teal flex-shrink-0 text-lg">🏺</div>
+                              <Torus className="w-4 h-4 text-hd-teal flex-shrink-0" />
                               </div>
                               <span className="text-sm font-semibold text-slate-700">Pottery Reconstruction Challenge</span>
                             </div>
@@ -711,7 +700,7 @@ From a Mystery Box to a simulated dig site, from decoding seals to sealing a tim
                         <div className="p-2 bg-slate-200/50 rounded-lg">
                           <User className="w-5 h-5 text-slate-600" />
                         </div>
-                        <span className="text-base font-bold text-slate-700">Led by PhD Archaeologist</span>
+                        <span className="text-base font-bold text-slate-700">Led by an Expert </span>
                       </div>
                     </div>
                   </CardContent>
@@ -744,12 +733,11 @@ From a Mystery Box to a simulated dig site, from decoding seals to sealing a tim
                 
                 <p className="text-base text-slate-600 leading-relaxed mb-6">
                   Teaching social sciences is not just about delivering content—it's about shaping mindsets, encouraging critical thinking, 
-                  and helping students see the world through multiple lenses. Yet, many educators struggle to move beyond textbooks due to a lack of innovative tools and training.
+                  and helping students see the world through multiple lenses. Yet, many educators struggle to move beyond textbooks due to a lack of innovative tools and training. Our teacher training workshops are designed to re-energize social science classrooms by blending creativity, technology, and interdisciplinary thinking. Whether you're a seasoned educator or just beginning your journey, these programs equip you with practical tools to make learning dynamic, student-centered, and future-ready.
                 </p>
                 
-                <p className="text-sm text-slate-600 leading-relaxed">
-                  Our teacher training workshops are designed to re-energize social science classrooms by blending creativity, technology, and interdisciplinary thinking. Whether you're a seasoned educator or just beginning your journey, these programs equip you with practical tools to make learning dynamic, student-centered, and future-ready.
-                </p>
+                 
+
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">

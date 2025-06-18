@@ -95,27 +95,27 @@ const HomePage = () => {
     {
       id: 3,
       src: "https://i.postimg.cc/63Pw4gyK/3.jpg",
-      title: "Rise of a Hitler 3",
+      title: "Rise of a Hitler",
     },
     {
       id: 4,
-      src: "https://i.postimg.cc/FKs7ytsk/4.jpg",
-      title: "Rise of a Hitler 4",
+      src: "https://i.postimg.cc/mDVpC5sm/Threads-of-Time-Indus-Valley-Civilization-1.jpg",
+      title: "Indus Valley Civilization",
     },
     {
       id: 5,
-      src: "https://i.postimg.cc/5jdVnzBk/5.jpg",
-      title: "Rise of a Hitler 5",
+      src: "https://i.postimg.cc/hGB2wB4C/Ti-E-Teacher-Training-DPS-Schools-1.jpg",
+      title: "TiE Teacher Training",
     },
     {
       id: 6,
-      src: "https://i.postimg.cc/mrRrTvF6/6.jpg",
-      title: "Rise of a Hitler 1",
+      src: "https://i.postimg.cc/6qycR6zQ/Trade-To-Territory.jpg",
+      title: "Trade To Territory",
     },
     {
       id: 7,
       src: "https://i.postimg.cc/Z5JRmkNs/7.jpg",
-      title: "Rise of a Hitler 2",
+      title: "Rise of a Hitler",
     },
     {
       id: 8,

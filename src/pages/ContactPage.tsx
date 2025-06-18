@@ -26,7 +26,7 @@ const ContactPage = () => {
     },
     {
       question: "How do monument visits work?",
-      answer: "Our Echoes of the Past visits include a pre-visit school orientation, a story-driven guided tour with live performances, and interactive worksheets for reflection. We accommodate 100–150 students per visit, led by actors and educators."
+      answer: "Our visits include a pre-visit school orientation, a story-driven guided tour with live performances, and interactive worksheets for reflection. We accommodate 100–150 students per visit, led by actors and educators."
     },
     {
       question: "What are your fees for different programs?",
@@ -38,7 +38,7 @@ const ContactPage = () => {
     },
     {
       question: "Do you provide teacher training programs?",
-      answer: "Yes! We offer two dynamic workshops – 'Bringing Lessons to Life' using drama to enhance classroom teaching, and 'Teaching with GenAI' that introduces tools like ChatGPT and Canva AI. Both are practical and cross-subject applicable."
+      answer: "Yes! We offer two dynamic workshops – 'Bringing Lessons to Life' using drama to enhance classroom teaching, and 'Teaching with GenAI' that introduces tools. Both are practical and cross-subject applicable."
     },
     {
       question: "Can you help schools design or revamp their social science curriculum?",
