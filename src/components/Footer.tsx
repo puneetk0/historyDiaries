@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white py-12">
       <div className="container mx-auto px-4">
-        <div className="flex justify-between">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Logo and Description */}
           <div className="flex flex-col">
             <h3 className="font-trajan text-2xl mb-4">HISTORY DIARIES</h3>
@@ -41,9 +41,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
- 
-       
+
           {/* Contact */}
           <div>
             <h4 className="font-garamond text-xl mb-4">Contact Us</h4>

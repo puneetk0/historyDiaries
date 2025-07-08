@@ -17,7 +17,20 @@ const Navbar = () => {
     { name: "CONTACT", path: "/contact" }
   ];
 
-  
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     setIsMenuOpen(false);
@@ -27,27 +40,28 @@ const Navbar = () => {
     <header
       className={`fixed top-0 w-full z-50 transition-all duration-500 ease-in-out ${
         isScrolled
-          ? "bg-white/95 backdrop-blur-lg shadow-xl border-b border-gray-100/50 py-3"
-          : "bg-gradient-to-b from-black/30 to-transparent backdrop-blur-sm py-3"
+          ? "bg-white/95 backdrop-blur-lg shadow-xl border-b border-gray-100/50 py-2 md:py-3"
+          : "bg-gradient-to-b from-black/30 to-transparent backdrop-blur-sm py-3 md:py-5"
       }`}
     >
-      <div className="container mx-auto px-6 lg:px-5 flex justify-between items-center">
-        {/* Logo */}
-        <Link to="/" className="flex items-center gap-4 group">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8 flex justify-between items-center">
+        {/* Logo - Responsive sizing */}
+        <Link to="/" className="flex items-center group">
           <div className="relative">
             <img 
               src="/lovable-uploads/8289c4ca-e166-40b3-a77b-b60722904d08.png" 
               alt="History Diaries Logo"
-              className="h-16 w-auto transition-transform duration-300 group-hover:scale-105"
+              className={`h-8 md:h-11 w-auto transition-all duration-300 group-hover:scale-105 ${
+                isScrolled ? 'brightness-100' : 'brightness-100 drop-shadow-lg'
+              }`}
             />
             <div className="absolute inset-0 bg-gradient-to-br from-hd-orange/20 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
           </div>
-          
         </Link>
 
         {/* Desktop Navigation */}
         {!isMobile && (
-          <nav className="hidden md:flex items-center space-x-12">
+          <nav className="hidden md:flex items-center space-x-8 lg:space-x-12">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
@@ -69,56 +83,58 @@ const Navbar = () => {
           </nav>
         )}
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Button - Better styling */}
         {isMobile && (
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className={`md:hidden focus:outline-none z-50 p-2 rounded-lg transition-all duration-300 ${
-              isScrolled 
-                ? 'text-gray-700 hover:bg-gray-100' 
-                : 'text-white hover:bg-white/10'
-            } ${isMenuOpen ? 'bg-white text-gray-700' : ''}`}
+            className={`md:hidden focus:outline-none z-50 p-2 rounded-lg transition-all duration-300 relative ${
+              isMenuOpen 
+                ? 'text-gray-800 hover:bg-gray-100' 
+                : isScrolled 
+                  ? 'text-gray-800 hover:bg-gray-100' 
+                  : 'text-white hover:bg-white/10'
+            }`}
           >
             {isMenuOpen ? (
-              <X size={24} className="transition-transform duration-300 rotate-90" />
+              <X size={28} className="transition-transform duration-300" />
             ) : (
               <Menu size={24} className="transition-transform duration-300" />
             )}
           </button>
         )}
 
-        {/* Mobile Menu */}
-        {isMobile && (
-          <div
-            className={`fixed inset-0 bg-gradient-to-br from-white via-gray-50 to-blue-50 backdrop-blur-xl z-40 transform transition-all duration-500 ease-in-out ${
-              isMenuOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
-            }`}
-          >
-            <div className="flex flex-col items-center justify-center h-full space-y-8">
-              {navLinks.map((link, index) => (
-                <Link
-                  key={link.path}
-                  to={link.path}
-                  className={`font-raleway text-2xl font-bold tracking-wider uppercase transition-all duration-300 transform hover:scale-110 ${
-                    location.pathname === link.path
-                      ? "text-hd-orange"
-                      : "text-gray-700 hover:text-hd-orange"
-                  }`}
-                  style={{
-                    animationDelay: `${index * 0.1}s`,
-                    animation: isMenuOpen ? 'fadeInUp 0.6s ease-out forwards' : 'none'
-                  }}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {link.name}
-                </Link>
-              ))}
+        {/* Mobile Menu - Full screen overlay */}
+        {isMobile && isMenuOpen && (
+          <div className="fixed inset-0 bg-white z-40 flex flex-col pt-20">
+            {/* Close button in top right */}
+            <div className="absolute top-6 right-6 z-50">
+              <button
+                onClick={() => setIsMenuOpen(false)}
+                className="p-2 text-gray-800 hover:bg-gray-100 rounded-lg transition-colors"
+              >
+                <X size={28} />
+              </button>
             </div>
             
-            {/* Decorative elements for mobile menu */}
-            <div className="absolute top-20 right-10 w-20 h-20 bg-hd-orange/10 rounded-full blur-xl"></div>
-            <div className="absolute bottom-32 left-8 w-16 h-16 bg-hd-blue/10 rounded-full blur-lg"></div>
-            <div className="absolute top-1/2 right-4 w-12 h-12 bg-hd-teal/10 rounded-full blur-md"></div>
+            {/* Menu content centered with full white background */}
+            <div className="flex-1 flex flex-col justify-center items-center px-8 bg-white min-h-screen">
+              <div className="flex flex-col space-y-6 text-center w-full max-w-sm">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    className={`font-raleway text-xl font-bold tracking-wider uppercase transition-all duration-300 py-4 px-6 rounded-xl w-full ${
+                      location.pathname === link.path
+                        ? "text-white bg-hd-orange shadow-lg"
+                        : "text-gray-800 hover:text-white hover:bg-hd-orange/80 bg-gray-100 hover:shadow-md"
+                    }`}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         )}
       </div>
