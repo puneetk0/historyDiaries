@@ -251,7 +251,7 @@ const ProgramsPage = () => {
                       <div className="flex flex-wrap gap-2 md:gap-3 mb-3 md:mb-4">
                         <div className="flex items-center gap-2 bg-gradient-to-r from-hd-teal/10 to-teal-500/10 px-3 md:px-4 py-1.5 md:py-2 rounded-lg border border-hd-teal/20">
                           <Calendar className="w-3 h-3 md:w-4 md:h-4 text-hd-teal" />
-                          <span className="text-xs md:text-sm font-bold text-slate-700">July 2025</span>
+                          <span className="text-xs md:text-sm font-bold text-slate-700">29th - 30th July 2025</span>
                         </div>
                       </div>
                     </CardHeader>
@@ -314,7 +314,7 @@ const ProgramsPage = () => {
                       <div className="flex flex-wrap gap-2 md:gap-3 mb-3 md:mb-4">
                         <div className="flex items-center gap-2 bg-gradient-to-r from-orange-100 to-red-50 px-3 md:px-4 py-1.5 md:py-2 rounded-lg border border-orange-200">
                           <Calendar className="w-3 h-3 md:w-4 md:h-4 text-orange-600" />
-                          <span className="text-xs md:text-sm font-bold text-slate-700">August 2025</span>
+                          <span className="text-xs md:text-sm font-bold text-slate-700">21st August 2025</span>
                         </div>
                       </div>
                     </CardHeader>
